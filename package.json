@@ -8,7 +8,8 @@
   "scripts": {
     "lint": "prettier --write src/index.ts",
     "build": "tsc --outDir dist src/index.ts",
-    "watch": "yarn run build -w"
+    "watch": "yarn run build -w",
+    "test": "jest"
   },
   "devDependencies": {
     "@types/node": "^16.7.1",
