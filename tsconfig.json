@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "lib": ["ES2018"],
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "target": "esnext",
+    "noImplicitAny": true,
+    "strictNullChecks": true
+  }
+}
