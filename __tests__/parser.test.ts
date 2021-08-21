@@ -1,4 +1,4 @@
-const parser = require('../dist/parser');
+import { parse } from '../src/parser';
 
 it('parse cpanfile', () => {
   const cpanfileStr = [
@@ -20,7 +20,8 @@ it('parse cpanfile', () => {
     `test_requires 'Test::Warn', 0.1;`,
     `author_requires 'Module::Install', 0.99;`,
   ].join('\n');
-  return expect(parser.parse(cpanfileStr)).toMatchObject({
+
+  expect(parse(cpanfileStr)).toMatchObject({
     configure: {
       requires: { 'ExtUtils::MakeMaker': '5.5' },
     },
