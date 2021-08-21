@@ -7,4 +7,4 @@ export const parseCpanfile = async (path: string): Promise<string> => {
   return parse(buffer.toString());
 };
 
-parseCpanfile('./__tests__/cpanfile');
+parseCpanfile('./__tests__/cpanfile').then((res) => console.log(res));

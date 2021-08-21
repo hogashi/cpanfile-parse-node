@@ -51,4 +51,4 @@ var parseCpanfile = function (path) { return __awaiter(void 0, void 0, void 0, f
     });
 }); };
 exports.parseCpanfile = parseCpanfile;
-exports.parseCpanfile('./__tests__/cpanfile');
+exports.parseCpanfile('./__tests__/cpanfile').then(function (res) { return console.log(res); });
