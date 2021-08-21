@@ -1,2 +1,4 @@
 # cpanfile-parse-node
-parse cpanfile in node (experimental)
+
+- parse cpanfile in node (experimental)
+  - ref: https://metacpan.org/pod/Module::CPANfile
