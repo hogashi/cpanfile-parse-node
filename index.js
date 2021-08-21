@@ -39,11 +39,11 @@ exports.__esModule = true;
 exports.parseCpanfile = void 0;
 var fs = require("fs/promises");
 var parser_1 = require("./parser");
-var parseCpanfile = function () { return __awaiter(void 0, void 0, void 0, function () {
+var parseCpanfile = function (path) { return __awaiter(void 0, void 0, void 0, function () {
     var buffer;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, fs.readFile('./cpanfile')];
+            case 0: return [4 /*yield*/, fs.readFile(path)];
             case 1:
                 buffer = _a.sent();
                 return [2 /*return*/, parser_1.parse(buffer.toString())];
@@ -51,4 +51,4 @@ var parseCpanfile = function () { return __awaiter(void 0, void 0, void 0, funct
     });
 }); };
 exports.parseCpanfile = parseCpanfile;
-exports.parseCpanfile();
+exports.parseCpanfile('./__tests__/cpanfile');
