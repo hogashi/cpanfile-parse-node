@@ -6,7 +6,9 @@
   "author": "hogashi <hogextend@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc --outDir dist src/index.ts"
+    "lint": "prettier --write src/index.ts",
+    "build": "tsc --outDir dist src/index.ts",
+    "watch": "yarn run build -w"
   },
   "devDependencies": {
     "@types/node": "^16.7.1",
