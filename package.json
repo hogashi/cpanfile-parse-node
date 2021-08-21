@@ -6,7 +6,7 @@
   "author": "hogashi <hogextend@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "prettier --write src/*.ts src/*.js",
+    "lint": "prettier --write src/*.ts __tests__/*.test.js",
     "build": "tsc --outDir ./ src/*.ts",
     "watch": "yarn run build -w",
     "test": "jest"
