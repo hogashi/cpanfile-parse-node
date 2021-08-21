@@ -1,4 +1,4 @@
-const parser = require('../parser');
+const parser = require('../dist/parser');
 
 it('parse cpanfile', () => {
   const cpanfileStr = [
