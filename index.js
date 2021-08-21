@@ -46,7 +46,6 @@ var parseCpanfile = function () { return __awaiter(void 0, void 0, void 0, funct
             case 1:
                 buffer = _a.sent();
                 str = buffer.toString();
-                // console.log({ str });
                 return [2 /*return*/, str];
         }
     });
