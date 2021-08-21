@@ -1,9 +1,8 @@
 import * as fs from 'fs/promises';
 
-export const parseCpanfile = () => {
-  fs.readFile('./cpanfile').then((buffer) => {
-    console.log({ buffer: buffer.toString() });
-  });
+export const parseCpanfile = async () => {
+  const buffer = await fs.readFile('./cpanfile');
+  console.log({ buffer: buffer.toString() });
 };
 
 parseCpanfile();
