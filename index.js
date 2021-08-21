@@ -1,2 +1,1 @@
-const index = require('./dist');
-export default index.loadCpanfile;
+exports.parseCpanfile = require('./dist').default;
