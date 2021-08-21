@@ -38,15 +38,15 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 exports.__esModule = true;
 exports.parseCpanfile = void 0;
 var fs = require("fs/promises");
+var parser_1 = require("./parser");
 var parseCpanfile = function () { return __awaiter(void 0, void 0, void 0, function () {
-    var buffer, str;
+    var buffer;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0: return [4 /*yield*/, fs.readFile('./cpanfile')];
             case 1:
                 buffer = _a.sent();
-                str = buffer.toString();
-                return [2 /*return*/, str];
+                return [2 /*return*/, parser_1.parse(buffer.toString())];
         }
     });
 }); };
