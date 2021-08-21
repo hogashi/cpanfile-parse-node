@@ -1,13 +1,13 @@
 {
   "name": "cpanfile-parse-node",
   "version": "0.0.1",
-  "main": "dist/index.js",
+  "main": "index.js",
   "repository": "ssh://git@github.com/hogashi/cpanfile-parse-node.git",
   "author": "hogashi <hogextend@gmail.com>",
   "license": "MIT",
   "scripts": {
     "lint": "prettier --write src/index.ts",
-    "build": "tsc --outDir dist src/index.ts",
+    "build": "tsc --outDir ./ src/index.ts",
     "watch": "yarn run build -w",
     "test": "jest"
   },
